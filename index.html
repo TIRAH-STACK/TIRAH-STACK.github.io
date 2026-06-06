@@ -4,199 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSA30203 | SOC Analyst E-Portfolio</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts (Plus Jakarta Sans & Space Mono untuk vibe IT yang kemas) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Fira Code', monospace;
-            background-color: #030712; /* Deep Black/Dark */
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc; /* Soft Off-White/Slate-50 */
         }
-        .cyber-glow {
-            box-shadow: 0 0 15px rgba(34, 211, 238, 0.3);
-        }
-        .text-glow {
-            text-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
+        .code-font {
+            font-family: 'Space Mono', monospace;
         }
     </style>
 </head>
-<body class="text-slate-300 min-h-screen selection:bg-cyan-500 selection:text-black">
+<body class="text-slate-700 min-h-screen selection:bg-purple-200 selection:text-purple-900">
 
-    <header class="border-b border-cyan-500/30 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center gap-2 text-cyan-400 font-bold tracking-wider text-glow">
-                <span class="animate-pulse">●</span> [SYS_OVERRIDE: SOC_ANALYST_PORTFOLIO]
+    <!-- HEADER / NAVIGATION -->
+    <header class="border-b border-purple-100 bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-xs">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <div class="flex items-center gap-2 text-purple-600 font-bold tracking-tight text-sm">
+                <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span> ATHIRAH // E-PORTFOLIO
             </div>
-            <nav class="flex gap-4 text-xs sm:text-sm text-slate-400">
-                <a href="#about" class="hover:text-cyan-400 transition">> About</a>
-                <a href="#skills" class="hover:text-cyan-400 transition">> Skills</a>
-                <a href="#roadmap" class="hover:text-cyan-400 transition">> Roadmap</a>
-                <a href="#evidence" class="hover:text-cyan-400 transition">> Evidence</a>
-                <a href="#reflection" class="hover:text-cyan-400 transition">> Reflection</a>
+            <nav class="flex gap-6 text-xs font-medium text-slate-500">
+                <a href="#about" class="hover:text-purple-600 transition">About</a>
+                <a href="#skills" class="hover:text-purple-600 transition">Skills</a>
+                <a href="#roadmap" class="hover:text-purple-600 transition">Roadmap</a>
+                <a href="#evidence" class="hover:text-purple-600 transition">Evidence</a>
+                <a href="#reflection" class="hover:text-purple-600 transition">Reflection</a>
             </nav>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-8 space-y-12">
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
 
-        <section id="about" class="bg-slate-950/50 border border-slate-800 p-6 rounded-lg cyber-glow relative overflow-hidden">
-            <div class="absolute top-0 right-0 p-2 text-[10px] text-slate-700 select-none">v2.0.26_SEC</div>
-            <h1 class="text-2xl font-bold text-cyan-400 mb-2 text-glow">> SUBJECT: CSA30203</h1>
-            <p class="text-sm text-slate-400 mb-6">Special Topics in Computer Network Security — Individual E-Portfolio (20%)</p>
+        <!-- HERO SECTION / TUGASAN -->
+        <section id="about" class="bg-gradient-to-br from-purple-50 via-lavender-50 to-pink-50 border border-purple-100/50 p-8 rounded-2xl shadow-xs">
+            <span class="code-font text-[10px] uppercase tracking-wider bg-purple-100 text-purple-700 px-2 py-1 rounded-md font-bold">Coursework Specification</span>
+            <h1 class="text-2xl font-bold text-slate-800 mt-3 mb-1">CSA30203 Special Topics in Computer Network Security</h1>
+            <p class="text-xs text-slate-500 mb-6">Individual E-Portfolio (20%) — Personal Career Development Plan</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
-                <div class="space-y-2 border-l-2 border-cyan-500/50 pl-4">
-                    <p class="text-cyan-400 font-semibold">[TARGET ROLE]</p>
-                    <p class="text-white font-bold text-lg">SOC Analyst (Security Operations Center)</p>
-                    <p class="text-slate-400 text-xs mt-1">Frontline cyber defense specialist focusing on continuous monitoring, incident triage, and real-time threat detection.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm mt-4">
+                <div class="bg-white/70 backdrop-blur-xs p-5 rounded-xl border border-purple-100/40 space-y-2">
+                    <p class="text-purple-600 font-semibold text-xs tracking-wider uppercase code-font">[ Target Role ]</p>
+                    <p class="text-slate-800 font-bold text-base">SOC Analyst</p>
+                    <p class="text-slate-500 text-xs leading-relaxed">Frontline cyber defense specialist focusing on continuous monitoring, incident triage, and real-time threat detection.</p>
                 </div>
-                <div class="space-y-2 border-l-2 border-pink-500/50 pl-4">
-                    <p class="text-pink-400 font-semibold">[ROLE RELEVANCE]</p>
-                    <p class="text-slate-300">Modern enterprises face sophisticated cyber threats. A SOC Analyst actively monitors networks to minimize detection gaps and neutralize incident vectors before breaches escalate.</p>
+                <div class="bg-white/70 backdrop-blur-xs p-5 rounded-xl border border-purple-100/40 space-y-2">
+                    <p class="text-pink-600 font-semibold text-xs tracking-wider uppercase code-font">[ Role Relevance ]</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">Modern enterprises face sophisticated cyber threats. A SOC Analyst actively monitors networks to minimize detection gaps and neutralize incident vectors before breaches escalate.</p>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION B: SKILLS ASSESSMENT -->
         <section id="skills" class="space-y-6">
-            <div class="flex items-center gap-2">
-                <h2 class="text-xl font-bold text-cyan-400 text-glow">01// PERSONAL SKILLS ASSESSMENT</h2>
-                <div class="h-[1px] bg-cyan-500/30 flex-1"></div>
+            <div class="flex items-center gap-3">
+                <h2 class="text-lg font-bold text-slate-800 tracking-tight">01 / Personal Skills Assessment</h2>
+                <div class="h-[1px] bg-purple-100 flex-1"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-slate-950/40 border border-slate-800/80 p-5 rounded">
-                    <h3 class="text-white font-bold mb-3 text-sm text-cyan-400/90">// Technical Capabilities</h3>
-                    <ul class="space-y-3 text-xs text-slate-300">
-                        <li><strong class="text-white">Networking Basics:</strong> Proficient in foundational networking concepts, including the OSI model, TCP/IP suite, subnetting, core network management principles, and basic packet data analysis.</li>
-                        <li><strong class="text-white">Operating Systems & Virtualization:</strong> Experienced in configuring and navigating virtualized environments using <span class="text-pink-400">VMware</span>, with hands-on familiarity in operating systems such as <span class="text-pink-400">Ubuntu</span> and <span class="text-pink-400">Kali Linux</span>.</li>
-                        <li><strong class="text-white">Security Tools:</strong> Capable of utilizing industry-standard tools including <span class="text-cyan-400">Wireshark</span> (network traffic analysis) and <span class="text-cyan-400">Autopsy</span> (basic digital forensics).</li>
-                        <li><strong class="text-white">Programming/Scripting:</strong> Equipped with fundamental syntax knowledge in <span class="text-emerald-400">Python</span> (for automation) and <span class="text-emerald-400">Java</span>.</li>
+                <!-- Tech Skills -->
+                <div class="bg-white border border-slate-100 p-6 rounded-xl shadow-xs">
+                    <h3 class="text-purple-600 font-bold mb-4 text-xs tracking-wider uppercase code-font">// Technical Capabilities</h3>
+                    <ul class="space-y-3 text-xs text-slate-600 leading-relaxed">
+                        <li><strong class="text-slate-800">Networking Basics:</strong> Proficient in foundational networking concepts, including the OSI model, TCP/IP suite, subnetting, core network management principles, and basic packet data analysis.</li>
+                        <li><strong class="text-slate-800">Operating Systems & Virtualization:</strong> Experienced in configuring and navigating virtualized environments using <span class="text-purple-600 font-medium">VMware</span>, with hands-on familiarity in operating systems such as <span class="text-purple-600 font-medium">Ubuntu</span> and <span class="text-purple-600 font-medium">Kali Linux</span>.</li>
+                        <li><strong class="text-slate-800">Security Tools:</strong> Capable of utilizing industry-standard tools including <span class="text-purple-600 font-medium">Wireshark</span> (network traffic analysis) and <span class="text-purple-600 font-medium">Autopsy</span> (basic digital forensics).</li>
+                        <li><strong class="text-slate-800">Programming/Scripting:</strong> Equipped with fundamental syntax knowledge in <span class="text-purple-600 font-medium">Python</span> (for automation) and <span class="text-purple-600 font-medium">Java</span>.</li>
                     </ul>
                 </div>
-                <div class="bg-slate-950/40 border border-slate-800/80 p-5 rounded">
-                    <h3 class="text-white font-bold mb-3 text-sm text-pink-400/90">// Core Soft Skills</h3>
-                    <ul class="space-y-3 text-xs text-slate-300">
-                        <li><strong class="text-white">Analytical Thinking:</strong> Demonstrated ability to analyze patterns, isolate root causes, and systematically solve technical anomalies during complex lab troubleshooting.</li>
-                        <li><strong class="text-white">Teamwork & Collaboration:</strong> A reliable team player with proven experience collaborating effectively within groups to deliver university engineering/IT projects.</li>
-                        <li><strong class="text-white">Professional Communication:</strong> Adept at articulating technical concepts clearly, delivering structured project presentations, and driving technical discussions.</li>
+                <!-- Soft Skills -->
+                <div class="bg-white border border-slate-100 p-6 rounded-xl shadow-xs">
+                    <h3 class="text-pink-600 font-bold mb-4 text-xs tracking-wider uppercase code-font">// Core Soft Skills</h3>
+                    <ul class="space-y-3 text-xs text-slate-600 leading-relaxed">
+                        <li><strong class="text-slate-800">Analytical Thinking:</strong> Demonstrated ability to analyze patterns, isolate root causes, and systematically solve technical anomalies during complex lab troubleshooting.</li>
+                        <li><strong class="text-slate-800">Teamwork & Collaboration:</strong> A reliable team player with proven experience collaborating effectively within groups to deliver university engineering/IT projects.</li>
+                        <li><strong class="text-slate-800">Professional Communication:</strong> Adept at articulating technical concepts clearly, delivering structured project presentations, and driving technical discussions.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="overflow-x-auto border border-slate-800 rounded">
-                <table class="w-full text-left text-xs text-slate-400">
-                    <thead class="bg-slate-950 text-cyan-400 uppercase tracking-wider border-b border-slate-800">
+            <!-- Skills Gap Table -->
+            <div class="overflow-x-auto border border-slate-100 rounded-xl bg-white shadow-xs">
+                <table class="w-full text-left text-xs text-slate-600">
+                    <thead class="bg-slate-50 text-slate-500 font-semibold tracking-wide border-b border-slate-100">
                         <tr>
-                            <th class="p-3">Industry Req (SOC)</th>
-                            <th class="p-3">My Current Level</th>
-                            <th class="p-3">Gap Mitigation Plan</th>
+                            <th class="p-4">Industry Req (SOC)</th>
+                            <th class="p-4">My Current Level</th>
+                            <th class="p-4">Gap Mitigation Plan</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-slate-800/50 bg-slate-950/20">
-                        <tr>
-                            <td class="p-3 font-semibold text-white">SIEM Tools (Splunk/Sentinel)</td>
-                            <td class="p-3">Theoretical understanding only.</td>
-                            <td class="p-3 text-slate-400">Set up an open-source <span class="text-cyan-400">Wazuh SIEM</span> lab on home network.</td>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="p-4 font-semibold text-slate-800">SIEM Tools (Splunk/Sentinel)</td>
+                            <td class="p-4 text-slate-500">Theoretical understanding only.</td>
+                            <td class="p-4 text-purple-600 font-medium">Set up an open-source Wazuh SIEM lab on home network.</td>
                         </tr>
-                        <tr>
-                            <td class="p-3 font-semibold text-white">Log Analysis (Syslog/Windows Events)</td>
-                            <td class="p-3">Basic logic understanding.</td>
-                            <td class="p-3 text-slate-400">Engage in blue-team lab exercises via <span class="text-pink-400">TryHackMe / Let's Defend</span>.</td>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="p-4 font-semibold text-slate-800">Log Analysis (Syslog/Windows)</td>
+                            <td class="p-4 text-slate-500">Basic logic understanding.</td>
+                            <td class="p-4 text-purple-600 font-medium">Engage in blue-team lab exercises via TryHackMe / Let's Defend.</td>
                         </tr>
-                        <tr>
-                            <td class="p-3 font-semibold text-white">Stress Management (Shift Work)</td>
-                            <td class="p-3">Moderate (managed university stress).</td>
-                            <td class="p-3 text-slate-400">Develop strict personal scheduling and resilience training.</td>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="p-4 font-semibold text-slate-800">Stress Management (Shift Work)</td>
+                            <td class="p-4 text-slate-500">Moderate (managed university stress).</td>
+                            <td class="p-4 text-purple-600 font-medium">Develop strict personal scheduling and resilience training.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
+        <!-- SECTION C: CAREER DEVELOPMENT PLAN -->
         <section id="roadmap" class="space-y-6">
-            <div class="flex items-center gap-2">
-                <h2 class="text-xl font-bold text-cyan-400 text-glow">02// CAREER DEVELOPMENT PLAN</h2>
-                <div class="h-[1px] bg-cyan-500/30 flex-1"></div>
+            <div class="flex items-center gap-3">
+                <h2 class="text-lg font-bold text-slate-800 tracking-tight">02 / Career Development Plan</h2>
+                <div class="h-[1px] bg-purple-100 flex-1"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-                <div class="bg-slate-950 border border-slate-800 p-4 rounded border-t-2 border-t-cyan-500">
-                    <span class="text-xs text-slate-500 font-bold">YEAR 1 - 2</span>
-                    <h4 class="text-sm font-bold text-white my-1">Junior SOC Analyst (L1)</h4>
-                    <p class="text-[11px] text-slate-400">Focus: Alert monitoring, initial triage, log filtration. Target Cert: <span class="text-cyan-400">CompTIA Security+</span>.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white border border-slate-100 p-5 rounded-xl shadow-xs border-t-4 border-t-purple-400">
+                    <span class="code-font text-[10px] text-purple-500 font-bold tracking-wider">YEAR 1 - 2</span>
+                    <h4 class="text-sm font-bold text-slate-800 my-1">Junior SOC Analyst (L1)</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Focus: Alert monitoring, initial triage, log filtration. <br><span class="text-purple-600 font-medium">Target Cert: CompTIA Security+</span></p>
                 </div>
-                <div class="bg-slate-950 border border-slate-800 p-4 rounded border-t-2 border-t-pink-500">
-                    <span class="text-xs text-slate-500 font-bold">YEAR 3 - 4</span>
-                    <h4 class="text-sm font-bold text-white my-1">Incident Responder (L2)</h4>
-                    <p class="text-[11px] text-slate-400">Focus: Active threat containment, malware analysis. Target Cert: <span class="text-pink-400">Blue Team Level 1 (BTL1)</span>.</p>
+                <div class="bg-white border border-slate-100 p-5 rounded-xl shadow-xs border-t-4 border-t-pink-400">
+                    <span class="code-font text-[10px] text-pink-500 font-bold tracking-wider">YEAR 3 - 4</span>
+                    <h4 class="text-sm font-bold text-slate-800 my-1">Incident Responder (L2)</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Focus: Active threat containment, malware analysis. <br><span class="text-pink-600 font-medium">Target Cert: Blue Team Level 1 (BTL1)</span></p>
                 </div>
-                <div class="bg-slate-950 border border-slate-800 p-4 rounded border-t-2 border-t-emerald-500">
-                    <span class="text-xs text-slate-500 font-bold">YEAR 5+</span>
-                    <h4 class="text-sm font-bold text-white my-1">Senior Threat Hunter / SOC Lead</h4>
-                    <p class="text-[11px] text-slate-400">Focus: Proactive threat hunting, SIEM engineering. Target Cert: <span class="text-emerald-400">CISSP</span>.</p>
+                <div class="bg-white border border-slate-100 p-5 rounded-xl shadow-xs border-t-4 border-t-amber-400">
+                    <span class="code-font text-[10px] text-amber-500 font-bold tracking-wider">YEAR 5+</span>
+                    <h4 class="text-sm font-bold text-slate-800 my-1">Senior Threat Hunter / SOC Lead</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Focus: Proactive threat hunting, SIEM engineering. <br><span class="text-amber-600 font-medium">Target Cert: CISSP</span></p>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION D: EVIDENCE OF LEARNING -->
         <section id="evidence" class="space-y-6">
-            <div class="flex items-center gap-2">
-                <h2 class="text-xl font-bold text-cyan-400 text-glow">03// EVIDENCE OF LEARNING</h2>
-                <div class="h-[1px] bg-cyan-500/30 flex-1"></div>
+            <div class="flex items-center gap-3">
+                <h2 class="text-lg font-bold text-slate-800 tracking-tight">03 / Evidence of Learning</h2>
+                <div class="h-[1px] bg-purple-100 flex-1"></div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="bg-slate-950 border border-slate-800 p-4 rounded flex flex-col justify-between">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-xl shadow-xs flex flex-col justify-between">
                     <div>
-                        <span class="text-[10px] bg-cyan-950 text-cyan-400 border border-cyan-800 px-2 py-0.5 rounded font-bold uppercase">Coursework</span>
-                        <h3 class="text-sm font-bold text-white mt-2">CSA30203 Academic Labs</h3>
-                        <p class="text-xs text-slate-400 mt-1">Completed network protocol analysis labs and configuration security exercises under the network security syllabus.</p>
+                        <span class="text-[10px] bg-purple-50 text-purple-600 font-medium px-2 py-1 rounded-md code-font uppercase tracking-wider">Coursework</span>
+                        <h3 class="text-sm font-bold text-slate-800 mt-3">CSA30203 Academic Labs</h3>
+                        <p class="text-xs text-slate-500 mt-1 leading-relaxed">Completed network protocol analysis labs and configuration security exercises under the network security syllabus.</p>
                     </div>
-                    <div class="mt-4 bg-slate-900 h-32 border border-dashed border-slate-700 flex items-center justify-center rounded overflow-hidden">
-                        <span class="text-[10px] text-slate-500">[PLACEHOLDER: Insert Wireshark/Lab Screenshot Here]</span>
+                    <!-- TEMPLET TEMPAT GAMBAR -->
+                    <div class="mt-5 bg-slate-50 h-36 border border-dashed border-slate-200 flex items-center justify-center rounded-xl overflow-hidden">
+                        <span class="text-[10px] text-slate-400 code-font">[ PLACEHOLDER: Insert Wireshark/Lab Screenshot ]</span>
                     </div>
                 </div>
 
-                <div class="bg-slate-950 border border-slate-800 p-4 rounded flex flex-col justify-between">
+                <!-- Card 2 -->
+                <div class="bg-white border border-slate-100 p-5 rounded-xl shadow-xs flex flex-col justify-between">
                     <div>
-                        <span class="text-[10px] bg-pink-950 text-pink-400 border border-pink-800 px-2 py-0.5 rounded font-bold uppercase">Hands-on Lab</span>
-                        <h3 class="text-sm font-bold text-white mt-2">VMware Environment Configuration</h3>
-                        <p class="text-xs text-slate-400 mt-1">Configured isolated network topologies using Kali Linux and Ubuntu servers for analytical vulnerability scanning.</p>
+                        <span class="text-[10px] bg-pink-50 text-pink-600 font-medium px-2 py-1 rounded-md code-font uppercase tracking-wider">Hands-on Lab</span>
+                        <h3 class="text-sm font-bold text-slate-800 mt-3">VMware Environment Configuration</h3>
+                        <p class="text-xs text-slate-500 mt-1 leading-relaxed">Configured isolated network topologies using Kali Linux and Ubuntu servers for analytical vulnerability scanning.</p>
                     </div>
-                    <div class="mt-4 bg-slate-900 h-32 border border-dashed border-slate-700 flex items-center justify-center rounded overflow-hidden">
-                        <span class="text-[10px] text-slate-500">[PLACEHOLDER: Insert VMware/OS Setup Screenshot Here]</span>
+                    <div class="mt-5 bg-slate-50 h-36 border border-dashed border-slate-200 flex items-center justify-center rounded-xl overflow-hidden">
+                        <span class="text-[10px] text-slate-400 code-font">[ PLACEHOLDER: Insert VMware/OS Setup Screenshot ]</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION E: PERSONAL REFLECTION -->
         <section id="reflection" class="space-y-6">
-            <div class="flex items-center gap-2">
-                <h2 class="text-xl font-bold text-cyan-400 text-glow">04// PERSONAL REFLECTION</h2>
-                <div class="h-[1px] bg-cyan-500/30 flex-1"></div>
+            <div class="flex items-center gap-3">
+                <h2 class="text-lg font-bold text-slate-800 tracking-tight">04 / Personal Reflection</h2>
+                <div class="h-[1px] bg-purple-100 flex-1"></div>
             </div>
 
-            <div class="bg-slate-950/50 border border-slate-800 p-6 rounded-lg space-y-4 text-xs sm:text-sm">
-                <p class="text-slate-500 border-b border-slate-800 pb-2">// TARGET COMPANY INTERVIEW SIMULATION: TM ONE (CYDEC)</p>
+            <div class="bg-white border border-slate-100 p-6 rounded-xl shadow-xs space-y-5 text-xs sm:text-sm">
+                <p class="text-slate-400 border-b border-slate-100 pb-2 code-font tracking-tight">// TARGET COMPANY INTERVIEW SIMULATION: TM ONE (CYDEC)</p>
                 
                 <div class="space-y-1">
-                    <p class="text-cyan-400 font-bold">Q1: Why do you want to work for TM One (CYDEC)?</p>
-                    <p class="text-slate-300">TM One CYDEC runs a premier global-tier Cyber Defence Centre in Malaysia. Working here provides unprecedented access to large-scale infrastructure defense telemetry, offering the ultimate testing ground for an aspiring SOC Analyst.</p>
+                    <p class="text-purple-600 font-bold">Q1: Why do you want to work for TM One (CYDEC)?</p>
+                    <p class="text-slate-600 leading-relaxed">TM One CYDEC runs a premier global-tier Cyber Defence Centre in Malaysia. Working here provides unprecedented access to large-scale infrastructure defense telemetry, offering the ultimate testing ground for an aspiring SOC Analyst.</p>
                 </div>
 
                 <div class="space-y-1">
-                    <p class="text-cyan-400 font-bold">Q2: What value can you bring, and why should we hire you?</p>
-                    <p class="text-slate-300">I bring strong academic foundations in network security principles directly coupled with an autonomous learning drive. This portfolio showcases my proactive initiative to translate university syllabus constraints into clear, structured industry readiness.</p>
+                    <p class="text-purple-600 font-bold">Q2: What value can you bring, and why should we hire you?</p>
+                    <p class="text-slate-600 leading-relaxed">I bring strong academic foundations in network security principles directly coupled with an autonomous learning drive. This portfolio showcases my proactive initiative to translate university syllabus constraints into clear, structured industry readiness.</p>
                 </div>
 
                 <div class="space-y-1">
-                    <p class="text-cyan-400 font-bold">Q3: What are your strengths and weaknesses?</p>
-                    <p class="text-slate-300"><strong class="text-white">Strength:</strong> Exceptional attention to architectural anomaly detail—crucial for hunting low-and-slow persistent attacks. <br><strong class="text-white">Weakness:</strong> Limited exposure to high-license enterprise tech (e.g., full Splunk suites), which I mitigate by self-hosting equivalent open-source ecosystems like Wazuh at home.</p>
+                    <p class="text-purple-600 font-bold">Q3: What are your strengths and weaknesses?</p>
+                    <p class="text-slate-600 leading-relaxed"><strong class="text-slate-800">Strength:</strong> Exceptional attention to architectural anomaly detail—crucial for hunting low-and-slow persistent attacks. <br><strong class="text-slate-800">Weakness:</strong> Limited exposure to high-license enterprise tech (e.g., full Splunk suites), which I mitigate by self-hosting equivalent open-source ecosystems like Wazuh at home.</p>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="text-center py-8 text-xs text-slate-600 border-t border-slate-900 bg-slate-950">
+    <footer class="text-center py-8 text-xs text-slate-400 border-t border-slate-100 bg-white">
         <p>© 2026 E-Portfolio. Engineered for CSA30203. Powered by GitHub Pages.</p>
     </footer>
 
